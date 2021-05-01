@@ -3,7 +3,7 @@
 Practice makes perfect!
 
 ## Prepare project for containerization
-Run this command to generate a Gemfile.lock (if not already present)
+Run this command to generate a Gemfile.lock (if not already present or after adding to Gemfile)
 
 `docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app ruby:3.0.1 bundle install`
 
