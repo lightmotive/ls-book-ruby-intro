@@ -1,10 +1,13 @@
 # frozen_string_literal: true
 
-puts "What's your name?"
-name = gets.chomp
+print "What's your first name? "
+first_name = gets.chomp
 
-puts "Greetings, #{name}! Maybe this will boost your ego..."
+print 'And your last name? '
+last_name = gets.chomp
 
-10.times { puts name }
+puts "Greetings, #{first_name} #{last_name}! Maybe this will boost your ego..."
+
+10.times { puts "#{first_name} #{last_name}" }
 
 puts 'There, now, how does that feel? ;-)'
