@@ -2,10 +2,12 @@
 
 def scream(words)
   words += '!!!!'
-  return
   puts words
 end
 
 scream('Yippeee')
-# nothing put to screen because return statement preceeds puts words
-# => "Yippeee!!!!"
+# puts to screen: Yippeee!!!!
+# => nil
+# scream returns nil because puts, the last expression in the method, returns nil.
+# Cognitive mistake in previous commit (exercise 3):
+#   The return line returns nil, not the last non-nil expression before it. Good to know!
