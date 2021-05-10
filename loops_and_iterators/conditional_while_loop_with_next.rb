@@ -3,11 +3,8 @@
 x = 0
 
 while x <= 10
-  if x == 3
-    x += 1
-    next
-  elsif x.odd?
-    puts x
-  end
+  next x += 1 if x == 3
+
+  puts x if x.odd?
   x += 1
 end
