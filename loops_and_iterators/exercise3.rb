@@ -1,4 +1,4 @@
-# frozen_string_literal: false
+# frozen_string_literal: true
 
 def count_to_zero(from_number)
   return unless from_number >= 0

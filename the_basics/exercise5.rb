@@ -1,4 +1,4 @@
-# frozen_string_literal: false
+# frozen_string_literal: true
 
 def factorial(num)
   raise StandardError, 'Number must be >= 0' if num.negative?

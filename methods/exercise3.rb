@@ -1,4 +1,4 @@
-# frozen_string_literal: false
+# frozen_string_literal: true
 
 def multiply(number1, number2)
   number1 * number2

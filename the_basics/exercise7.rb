@@ -1,4 +1,4 @@
-# frozen_string_literal: false
+# frozen_string_literal: true
 
 # The error message...
 #   "SyntaxError: (irb):2: syntax error, unexpected ')', expecting '}'

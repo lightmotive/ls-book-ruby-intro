@@ -1,4 +1,4 @@
-# frozen_string_literal: false
+# frozen_string_literal: true
 
 print 'Please enter a positive number: '
 input_number = gets.chomp.to_i

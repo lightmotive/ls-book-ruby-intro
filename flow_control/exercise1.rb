@@ -1,4 +1,4 @@
-# frozen_string_literal: false
+# frozen_string_literal: true
 
 # Evaluate the following
 # (32 * 4) >= 129 # false, because 128 is not greater than or equal to 129.

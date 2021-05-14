@@ -1,4 +1,4 @@
-# frozen_string_literal: false
+# frozen_string_literal: true
 
 x = [1, 2, 3, 4, 5]
 x.each do |a|
