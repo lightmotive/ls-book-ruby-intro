@@ -8,10 +8,7 @@ family = { uncles: %w[bob joe steve],
            brothers: %w[frank rob david],
            aunts: %w[mary sally susan] }
 
-immediate_family_names = []
-(family.select do |relation, _names|
-  %i[sisters brothers].include?(relation)
-end).each { |_relation, names| immediate_family_names.push(names) }
+immediate_family_names =
+  (family.select { |relation| %i[sisters brothers].include?(relation) }).values.flatten
 
-puts '# Immediate family members #'
-immediate_family_names.each { |name| puts name }
+p immediate_family_names
