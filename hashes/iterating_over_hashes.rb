@@ -1,7 +1,11 @@
 # frozen_string_literal: true
 
-person = { name: 'bob', height: '6 ft', weight: '160 lbs', hair: 'brown' }
+person = { name: 'Bob', height: '6 ft', weight: '160 lbs', hair: 'brown' }
+
+name = person[:name]
 
 person.each do |key, value|
-  puts "Bob's #{key} is #{value}"
+  next if key == :name
+
+  puts "#{name}'s #{key} is #{value}"
 end
