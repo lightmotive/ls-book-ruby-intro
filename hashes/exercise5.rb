@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# What method could you use to find out if a Hash contains a specific value in it?
+# What method could you use to find out if a Hash contains a specific value?
 # Write a program to demonstrate this use.
 
 chocolate = { dark: '70% Cacao', very_dark: '80% Cacao', white: '0% Cacao' }
