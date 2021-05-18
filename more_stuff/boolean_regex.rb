@@ -1,14 +1,12 @@
 # frozen_string_literal: true
 
+require_relative 'print'
+
 def letter_b?(string)
-  if string =~ /b/
-    puts 'We have a match!'
-  else
-    puts 'No match here.'
-  end
+  string =~ /b/
 end
 
-letter_b?('basketball')
-letter_b?('football')
-letter_b?('hockey')
-letter_b?('golf')
+Print.boolean letter_b?('basketball')
+Print.boolean letter_b?('football')
+Print.boolean letter_b?('hockey')
+Print.boolean letter_b?('golf')
