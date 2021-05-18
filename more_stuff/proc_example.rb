@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-talk = proc do
-  puts 'I am talking.'
+talk = proc do |name|
+  puts "I am talking to #{name} :-)"
 end
 
-talk.call
+talk.call 'a good friend'
