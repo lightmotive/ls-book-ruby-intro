@@ -1,8 +1,17 @@
 # frozen_string_literal: true
 
-def greet(person)
-  puts 'Hello, ' + person
+def space_out_letters(person)
+  person.split('').join(' ')
 end
 
-greet('John')
-greet(1)
+def greet(person)
+  '-H e l l o, ' + space_out_letters(person) + '-'
+end
+
+def decorate_greeting(person)
+  puts '' + greet(person) + ''
+end
+
+decorate_greeting('John')
+decorate_greeting('Z')
+decorate_greeting(1)
