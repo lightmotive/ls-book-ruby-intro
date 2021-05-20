@@ -27,3 +27,7 @@ p arr
 arr.pop
 arr.push(3)
 p arr
+
+# Exercise 6: Get rid of duplicates without specifically removing any one value.
+arr.uniq!
+p arr
