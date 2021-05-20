@@ -20,3 +20,8 @@ p h
 puts 'Modify original hash with reject! method:'
 h.reject!(&filter_hash)
 p h
+
+# Launch School solution used delete_if, which gives the same output but the method result differs:
+# - reject methods return the removed key-value pairs.
+# - delete_if method returns the modified hash.
+# How to choose? It depends on whether the programmer wants to do something with the modified hash or the modifications.
