@@ -22,3 +22,8 @@ p arr_odds
 arr.push(11)
 arr.unshift(0)
 p arr
+
+# Exercise 5: Get rid of 11. And append a 3.
+arr.pop
+arr.push(3)
+p arr
