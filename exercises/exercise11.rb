@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# Given the following data structures, write a program that copies the information
+# Exercise 11: Given the following data structures, write a program that copies the information
 # from the array into the empty hash that applies to the correct person.
 
 contact_data = [['joe@email.com', '123 Main st.', '555-123-4567'],
@@ -28,4 +28,12 @@ end
 contact_data_a_to_h(contact_data[0], contacts['Joe Smith'])
 contact_data_a_to_h(contact_data[1], contacts['Sally Johnson'])
 
+puts 'Exercise 11:'
 p contacts
+
+# Exercise 12: Using the hash you created from the previous exercise,
+# demonstrate how you would access Joe's email and Sally's phone number.
+
+puts "\nExercise 12:"
+puts "Joe's email: #{contacts['Joe Smith'][:email]}"
+puts "Sally's phone #: #{contacts['Sally Johnson'][:phone]}"
