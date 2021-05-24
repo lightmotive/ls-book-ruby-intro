@@ -19,19 +19,15 @@ contacts = { 'Joe Smith' => {}, 'Sally Johnson' => {} }
 # If that might not be the case, one could write a simple method that determines the data type using regexes,
 # or they could seek a Ruby Gem that has more robust contact data type detection.
 
-def contact_data_to_hash(data_arr)
-  keys = %i[email address phone]
-  hash = {}
-  keys.each_with_index { |k, i| hash[k] = data_arr[i] }
-  hash
-end
-
 # This method requires:
 # - Ruby v1.9 (ordered hash--alternatively, replace hash with array, then convert to hash if needed)
 # - Identical item count
 # - Identical data order to match data with contact name, i.e., first hash item associates with first data item
 def merge_contact_data(contacts_hash, contact_data_arr)
-  contacts_hash.each_key.with_index { |k, i| contacts_hash[k] = contact_data_to_hash(contact_data_arr[i]) }
+  keys = %i[email address phone]
+  contacts_hash.each_with_index do |(_name, data), i|
+    keys.each { |k| data[k] = contact_data_arr[i].shift }
+  end
 end
 
 merge_contact_data(contacts, contact_data)
